@@ -1,0 +1,25 @@
+
+using System;
+
+class Program
+{
+    static int FindLargerNumber(int a, int b)
+    {
+        if (a > b)
+        {
+            return a;
+        }
+        else
+        {
+            return b;
+        }
+    }
+
+    static void Main()
+    {
+        int a = 3;
+        int b = 5;
+        int largerNumber = FindLargerNumber(a, b);
+        Console.WriteLine($"The larger number is {largerNumber}");
+    }
+}
