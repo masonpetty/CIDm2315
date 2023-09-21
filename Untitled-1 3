@@ -1,0 +1,37 @@
+using System;
+
+class Program
+{
+    static void PrintLeftTriangle(int N)
+    {
+        for (int i = 1; i <= N; i++)
+        {
+            for (int j = 1; j <= i; j++)
+            {
+                Console.Write("*");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    static void Main()
+    {
+        int N = 5;
+        string shape = "left";
+
+        Console.WriteLine($"N = {N}, Shape = {shape}");
+        
+        if (shape.ToLower() == "left")
+        {
+            PrintLeftTriangle(N);
+        }
+        else if (shape.ToLower() == "right")
+        {
+            // Add code for printing the right-side triangle (if needed).
+        }
+        else
+        {
+            Console.WriteLine("Invalid shape. Please choose 'left' or 'right'.");
+        }
+    }
+}
